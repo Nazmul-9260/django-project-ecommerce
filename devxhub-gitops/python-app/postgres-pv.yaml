@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: postgres-pv
-  namespace: devxhub
+  namespace: devxhub-dev
 spec:
   capacity:
     storage: 5Gi
@@ -18,7 +18,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: postgres-pvc
-  namespace: devxhub
+  namespace: devxhub-dev
 spec:
   accessModes:
     - ReadWriteMany
