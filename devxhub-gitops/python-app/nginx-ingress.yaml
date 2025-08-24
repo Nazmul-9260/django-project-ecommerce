@@ -4,14 +4,14 @@ metadata:
   name: nginx-ingress
   namespace: devxhub  # Adjust the namespace if required
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+        nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-  - host: devxhub.csl.com  # Replace with your domain or IP
+  - host: qsoft.example.com  # Replace with your domain or IP
     http:
       paths:
-      - path: /
+      - path: /test
         pathType: Prefix
         backend:
           service:

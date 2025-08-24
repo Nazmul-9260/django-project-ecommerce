@@ -8,9 +8,10 @@ spec:
     storage: 5Gi
   accessModes:
     - ReadWriteMany
+  storageClassName: postgres-store
   nfs:
     path: /srv/nfs/postgres
-    server: 172.16.188.131  # NFS server IP
+    server: 192.168.43.74  # NFS server IP
 
 ---
 apiVersion: v1
@@ -21,6 +22,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
+  storageClassName: postgres-store
   resources:
     requests:
       storage: 5Gi
