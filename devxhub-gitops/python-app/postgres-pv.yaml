@@ -10,7 +10,7 @@ spec:
     - ReadWriteMany
   storageClassName: postgres-store
   nfs:
-    path: /srv/nfs/postgres
+    path: /srv/nfs/postgres_dev
     server: 192.168.43.74  # NFS server IP
 
 ---
