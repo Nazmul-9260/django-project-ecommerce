@@ -10,7 +10,7 @@ spec:
     - ReadWriteMany
   storageClassName: static-store
   nfs:
-    path: /srv/nfs/static
+    path: /srv/nfs/static_dev
     server: 192.168.43.74
 
 ---
