@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: static-pv
-  namespace: devxhub
+  namespace: devxhub-dev
 spec:
   capacity:
     storage: 2Gi
@@ -18,7 +18,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: static-pvc
-  namespace: devxhub
+  namespace: devxhub-dev
 spec:
   accessModes:
     - ReadWriteMany
